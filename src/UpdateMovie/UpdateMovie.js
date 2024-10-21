@@ -29,7 +29,7 @@ const MovieUpdateForm = () => {
         }
       }
 
-      const response = await axios.put(`http://localhost:8100/movies/${updateData.movieName}`, updatedMovieData);
+      const response = await axios.put(`http://44.211.90.107:8100/movies/${updateData.movieName}`, updatedMovieData);
       console.log(response.data);
       navigate('/');
 

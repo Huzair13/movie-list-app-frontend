@@ -3,7 +3,7 @@ import axios from 'axios';
 const deleteMovie = async (movieName) => {
   try {
 
-    const endpoint = `http://localhost:8100/delete?movieName=${encodeURIComponent(movieName)}`;
+    const endpoint = `http://44.211.90.107:8100/delete?movieName=${encodeURIComponent(movieName)}`;
 
     const response = await axios.delete(endpoint);
 

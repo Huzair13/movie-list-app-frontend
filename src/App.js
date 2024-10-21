@@ -14,7 +14,7 @@ const App = () => {
   const [filteredMovies, setFilteredMovies] = useState([]);
 
   useEffect(() => {
-    const endpoint = 'http://localhost:8100/';
+    const endpoint = 'http://44.211.90.107:8100/';
     fetchMovies(endpoint);
   }, []);
 
@@ -33,7 +33,7 @@ const App = () => {
 
   const handleFilterChange = async ({ filterBy, value }) => {
     try {
-      const endpoint = `http://localhost:8100/filter?${encodeURIComponent(filterBy)}=${encodeURIComponent(value)}`;
+      const endpoint = `http://44.211.90.107:8100/filter?${encodeURIComponent(filterBy)}=${encodeURIComponent(value)}`;
       console.log(endpoint)
       const response = await fetch(endpoint);
       console.log(response)

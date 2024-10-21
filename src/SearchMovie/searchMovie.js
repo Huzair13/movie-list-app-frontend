@@ -50,7 +50,7 @@ export default class Search extends Component {
   
     try {
       // Pass movieName as a query parameter in the GET request
-      const response = await axios.post('http://localhost:8100/search', {
+      const response = await axios.post('http://44.211.90.107:8100/search', {
         movieName: this.state.movieName,
       });
   
