@@ -29,7 +29,7 @@ const MovieForm = () => {
   
 
       console.log(updatedMovieData);
-      const response = await axios.post('http://44.211.90.107:8100/addMovies', updatedMovieData);
+      const response = await axios.post('https://finaltask.huzairr.com/addMovies', updatedMovieData);
       console.log(response.data);
   
 
