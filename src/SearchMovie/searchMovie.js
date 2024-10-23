@@ -50,7 +50,7 @@ export default class Search extends Component {
   
     try {
       // Pass movieName as a query parameter in the GET request
-      const response = await axios.post('https://finaltask.huzairr.com/search', {
+      const response = await axios.post('https://private.huzairr.com/search', {
         movieName: this.state.movieName,
       });
   

@@ -29,7 +29,7 @@ const MovieUpdateForm = () => {
         }
       }
 
-      const response = await axios.put(`https://finaltask.huzairr.com/movies/${updateData.movieName}`, updatedMovieData);
+      const response = await axios.put(`https://private.huzairr.com/movies/${updateData.movieName}`, updatedMovieData);
       console.log(response.data);
       navigate('/');
 

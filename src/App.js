@@ -14,7 +14,7 @@ const App = () => {
   const [filteredMovies, setFilteredMovies] = useState([]);
 
   useEffect(() => {
-    const endpoint = 'https://finaltask.huzairr.com/';
+    const endpoint = 'https://private.huzairr.com/';
     fetchMovies(endpoint);
   }, []);
 
@@ -33,7 +33,7 @@ const App = () => {
 
   const handleFilterChange = async ({ filterBy, value }) => {
     try {
-      const endpoint = `https://finaltask.huzairr.com/filter?${encodeURIComponent(filterBy)}=${encodeURIComponent(value)}`;
+      const endpoint = `https://private.huzairr.com/filter?${encodeURIComponent(filterBy)}=${encodeURIComponent(value)}`;
       console.log(endpoint)
       const response = await fetch(endpoint);
       console.log(response)

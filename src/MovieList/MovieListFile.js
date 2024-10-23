@@ -22,7 +22,7 @@ class MovieList extends Component {
     try {
       const action= window.confirm("Are you sure to delete?");
       if(action){
-        const endpoint = `http://44.211.90.107:8100/delete`;
+        const endpoint = `https://private.huzairr.com/delete`;
 
         console.log('DELETE endpoint:', endpoint);
         const response = await axios.delete(endpoint, {
